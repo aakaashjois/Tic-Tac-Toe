@@ -1,0 +1,13 @@
+.board {
+    border-collapse: collapse;
+    width: 80%;
+    padding: 50px;
+    margin: auto;
+}
+
+.cell {
+    box-sizing: border-box;
+    width: 33.33%;
+    padding-top: 33.33%;
+    border: 1px solid black;
+}
