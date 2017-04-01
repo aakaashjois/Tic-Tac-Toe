@@ -43,9 +43,10 @@ function userClick(cellNumber) {
             turn++;
             cellsFilled++;
             selected[cellNumber] = true;
-            if (checkWinner(content[cellNumber]))
+            var gameWon = checkWinner(content[cellNumber]);
+            if (gameWon)
                 displayWinner(content[cellNumber]);
-            if (cellsFilled == 9)
+            else if (!gameWon && cellsFilled == 9)
                 displayDraw();
         }
     }
