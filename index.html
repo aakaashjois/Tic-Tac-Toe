@@ -5,15 +5,21 @@
     <title>Tic-Tac-Toe</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Rubik|VT323" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <h1>Tic-Tac-Toe</h1>
     </header>
+    <div class="overlay">
+        <div class="overlay-content">
+            <h2></h2>
+            <button>START GAME?</button>
+        </div>
+    </div>
     <table class="board">
         <tr class="row">
             <td class="cell" id="cell_0" onclick="userClick(0)">
@@ -49,9 +55,9 @@
             </td>
         </tr>
     </table>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
